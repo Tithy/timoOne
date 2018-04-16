@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+$HtoyH:60px;
+$HtoyF:30px;
+$HtoyC:calc(100% - 90px);
+
+
+$MtoyLG:1201px;
+$MtoyMD:1001px;
+$MtoySM:801px;
+$MtoyXS:100%;
+
+.toy-header-bg{
+  background-image: none;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.toy-footer-bg{
+  background-image: none;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.toy-content-bg{
+  background-image: none;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/*颜色配置*/
+/*g-skin-fff*/
+$Ctoyhbg:#475657;//头部颜色
+
+
+

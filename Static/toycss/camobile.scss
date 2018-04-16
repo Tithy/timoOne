@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none
+}
+button{
+    cursor: pointer;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+i, em {
+    font-style: normal;
+}
+
+em {
+    font-style: normal;
+}
+
+p,label,input,div,a,button{
+    margin-top: 0;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+html,body,.g-toy-root{
+    background: #999;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+.g-toy-view{
+    height: 100%;
+    .g-toy-page{
+        height: 100%;
+    }
+}
+
+.g-toy-header{
+    min-height: $HtoyH;
+    @extend .toy-header-bg;
+}
+.g-toy-footer{
+    height: $HtoyF;
+    @extend .toy-footer-bg;
+}
+.g-toy-content{
+    min-height:$HtoyC;
+    @extend .toy-content-bg;
+}
+.g-toy-fluid{
+    width: 100%;
+}
+.g-toy-center{
+    text-align: center;
+}
