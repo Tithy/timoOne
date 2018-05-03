@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+    }
+</style>
+<body>
+    <div style="display: inline-block;width: 33.33%;height:320px;text-align: right;background: #605ca8"><button style="font-size:20px;" class="left">左</button></div>
+    <div style="display: inline-block;width: 33.33%;height:320px;text-align: right;background: #4898d5"><button style="font-size:20px;" class="center">中</button></div>
+    <div style="display: inline-block;width: 33.33%;text-align: left;background: #2ba700"><button style="font-size:20px;" class="right">右</button></div>
+    <div class="again" style="position: absolute;top: 50px"><button style="font-size: 20px">刷新</button></div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    (function (window) {
+        $('.left').click(function () {
+            alert("左")
+            alert($(this).parent().width())
+        });
+        $('.center').click(function () {
+            alert("中")
+            alert($(this).parent().width())
+        });
+        $('.right').click(function () {
+            alert("右")
+        });
+        $('.again').click(function () {
+            location.reload();
+        });
+
+    })(window)
+</script>
+</html>
