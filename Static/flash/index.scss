@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.g-toy-header{
+  .m-header-logo{
+    font-size: 14px;
+    .m-logo-img{
+      display: block;
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+  .m-header-group{
+    height: $HtoyH;
+    line-height: $HtoyH;
+    text-align: right;
+    .m-group-a{
+      font-size: 24px;
+      margin: 0 15px;
+    }
+  }
+}
+
+.m-footer-copy{
+  font-size: 12px;
+  line-height: $HtoyF;
+  @extend .g-toy-fluid;
+  @extend .g-toy-center;
+}
+
+.m-index-box{
+  .m-index-nav{
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .m-index-list{
+    box-sizing:border-box ;
+    font-size: 0;
+    width: 100%;
+  }
+  .m-list-item{
+    box-sizing:border-box ;
+    display: inline-block;
+    height: 370px;
+    margin: 10px 5px;
+    padding: 15px;
+    width: 370px;
+  }
+  .m-item-pdimg{
+    height: 290px;
+    line-height: 290px;
+    width: 100%;
+  }
+  .m-item-pdinfo{
+    height: 60px;
+    font-size: 0;
+  }
+  .m-pdinfo-header{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(338px - 88px);
+  }
+  .m-pdinfo-title{
+    font-size: 16px;
+  }
+  .m-pdinfo-price{
+    font-size: 16px;
+  }
+  .m-pdinfo-a{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 60px;
+    vertical-align: middle;
+  }
+  .m-nav-group{
+    height: 100%;
+    position: fixed;
+    right: -48px;
+    top:0;
+    width: 48px;
+    .m-group-a{
+      display: inline-block;
+      font-size: 24px;
+      height: 68px;
+      line-height: 68px;
+      text-align: center;
+      width: 100%;
+    }
+    .m-group-right{
+      position: absolute;
+      top: 33.33%;
+    }
+    .m-group-top{
+      position: absolute;
+      bottom: 48px;
+      width: 100%;
+    }
+  }
+
+}
+@keyframes rightmove {
+  100%{
+    right: 0;
+    animation-play-state:paused;
+  }
+}
+@-moz-keyframes rightmove /* Firefox */
+{
+  100%{
+    right: 0;
+    animation-play-state:paused;
+
+  }
+}
+
+@-webkit-keyframes rightmove /* Safari 和 Chrome */
+{
+  100%{
+    right: 0;
+    animation-play-state:paused;
+  }
+}
+
+@-o-keyframes rightmove /* Opera */
+{
+  100%{
+    right: 0;
+    animation-play-state:paused;
+  }
+}
+.m-right-move{
+  animation: rightmove  0.5s linear 0s 1 normal forwards;
+  -moz-animation: rightmove  0.5s linear 0s 1 normal forwards;	/* Firefox */
+  -webkit-animation: rightmove  0.5s linear 0s 1 normal forwards;	/* Safari 和 Chrome */
+  -o-animation: rightmove  0.5s linear 0s 1 normal forwards;
+}
