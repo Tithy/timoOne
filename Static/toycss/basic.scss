@@ -30,5 +30,34 @@ $MtoyXS:100%;
 /*g-skin-fff*/
 $Ctoyhbg:#475657;//头部颜色
 
+/*滚动条*/
+@mixin scrollbar{
+  &::-webkit-scrollbar        //滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。
+  {
+    width:3px;
+    height:10px;
+  }
+  &::-webkit-scrollbar-button{
+    display: none;
+  }
+  &::-webkit-scrollbar-track  {
+    display: none;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: inherit;
+  }
+  &::-webkit-scrollbar-thumb{
+    @extend .m-default-scrollbar;
+
+  }
+  &::-webkit-scrollbar-corner{
+    @extend .m-default-scrollbar;
+
+  }
+  &::-webkit-resizer{
+    @extend .m-default-scrollbar;
+  }
+}
+
 
 
